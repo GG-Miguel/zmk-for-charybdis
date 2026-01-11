@@ -32,8 +32,8 @@
             bindings = <
 &kp TILDE  &kp EXCLAMATION  &kp HASH      &kp DOLLAR    &kp DOLLAR    &kp PERCENT    &kp CARET      &kp AMPERSAND  &kp ASTERISK  &kp LPAR  &kp RPAR  &kp PIPE
 &kp GRAVE  &kp MINUS     &kp PLUS  &kp N3  &kp N4  &kp LBKT       &kp RBKT       &kp F1         &kp F2        &kp F3                &kp F4                 &kp BACKSPACE
-&kp LSHFT  &kp N5     &kp N6  &kp N7  &kp N8  &none          &kp LBRCE   &kp F5         &kp F6        &kp F7                &kp F8                 &kp PAGE_UP
-&kp LCTRL  &kp N9     &kp N0  &kp MINUS     &kp EQUAL     &none          &kp RBRCE          &kp F9         &kp F10       &kp F11               &kp F12                &kp PAGE_DOWN
+&kp LSHFT  &kp N5     &kp N6  &kp N7  &kp N8  &none          &kp LBRC   &kp F5         &kp F6        &kp F7                &kp F8                 &kp PAGE_UP
+&kp LCTRL  &kp N9     &kp N0  &kp MINUS     &kp EQUAL     &none          &kp RBRC          &kp F9         &kp F10       &kp F11               &kp F12                &kp PAGE_DOWN
                                           &none  &none    &trans         &kp ENTER      &kp RALT
                                                         &none         &none          &none
             >;

@@ -10,42 +10,41 @@
     quick-tap-ms = <150>;
 };
 
+#define HM_A   &mt LGUI A
+#define HM_S   &mt LALT S
+#define HM_D   &mt LSHFT D
+#define HM_F   &mt LCTRL F
+
+#define HM_J   &mt RCTRL J
+#define HM_K   &mt RSHFT K
+#define HM_L   &mt RALT L
+#define HM_N   &mt RGUI N_TILDE
+
 / {
     combos { compatible = "zmk,combos"; };
 
     keymap {
         compatible = "zmk,keymap";
 
-        Base {
+       QWERTY {
             bindings = <
-&kp GRAVE       &kp N1   &kp N2  &kp N3        &kp N4        &kp N5          &kp N6       &kp N7         &kp N8     &kp N9   &kp N0       &kp BACKSLASH
-&kp TAB         &kp Q    &kp W   &kp E         &kp R         &kp T           &kp Y        &kp U          &kp I      &kp O    &kp P        &kp BACKSPACE
-&kp LEFT_SHIFT  &kp A    &kp S   &kp D         &kp F         &kp G           &kp H        &kp J          &kp K      &kp L    &kp SEMI     &kp APOS
-&kp LCTRL       &lt 3 Z  &kp X   &kp C         &kp V         &kp B           &kp N        &kp M          &kp COMMA  &kp DOT  &lt 3 SLASH  &kp ESCAPE
-                                 &kp LEFT_WIN  &kp SPACE     &lt 1 ENTER     &lt 2 ENTER  &kp RIGHT_ALT
-                                               &kp LEFT_ALT  &kp CAPSLOCK    &kp DELETE
+&kp GRAVE       &kp N1   &kp N2  &kp N3        &kp N4        &kp N5          &kp N6       &kp N7         &kp N8     &kp N9   &kp N0       &kp APOS
+&kp TAB         &kp Q    &kp W   &kp E         &kp R         &kp T           &kp Y        &kp U          &kp I      &kp O    &kp P        &kp SLASH
+&kp LSHIFT  HM_A     HM_S   HM_D           HM_F         &kp G           &kp H         HM_J          HM_K        HM_L     HM_N     &kp APOS
+&kp LCTRL       &kp Z  &kp X   &kp C         &kp V         &kp B           &kp N        &kp M          &kp COMMA  &kp DOT  &kp MINUS  &kp BACKSLASH
+                               &kp ESCAPE    &kp BACKSPACE   &kp SPACE       &lt 2 ENTER  &kp LALT
+                                               &lt 1 TAB       &kp CAPSLOCK    &kp DELETE
             >;
         };
 
-        layer_1 {
+        Symbol {
             bindings = <
 &kp TILDE  &kp EXCLAMATION  &kp HASH      &kp DOLLAR    &kp DOLLAR    &kp PERCENT    &kp CARET      &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PIPE
-&kp GRAVE  &kp NUMBER_1     &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp LBKT       &kp RBKT       &kp F1         &kp F2        &kp F3                &kp F4                 &kp BACKSPACE
-&kp LSHFT  &kp NUMBER_5     &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &none          &kp BACKSLASH  &kp F5         &kp F6        &kp F7                &kp F8                 &kp PAGE_UP
-&kp LCTRL  &kp NUMBER_9     &kp NUMBER_0  &kp MINUS     &kp EQUAL     &none          &none          &kp F9         &kp F10       &kp F11               &kp F12                &kp PAGE_DOWN
+&kp GRAVE  &kp MINUS     &kp PLUS  &kp NUMBER_3  &kp NUMBER_4  &kp LBKT       &kp RBKT       &kp F1         &kp F2        &kp F3                &kp F4                 &kp BACKSPACE
+&kp LSHFT  &kp NUMBER_5     &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &none          &kp LBRACE   &kp F5         &kp F6        &kp F7                &kp F8                 &kp PAGE_UP
+&kp LCTRL  &kp NUMBER_9     &kp NUMBER_0  &kp MINUS     &kp EQUAL     &none          &kp RBRACE          &kp F9         &kp F10       &kp F11               &kp F12                &kp PAGE_DOWN
                                           &kp LEFT_WIN  &kp SPACE     &trans         &kp ENTER      &kp RIGHT_ALT
                                                         &none         &none          &none
-            >;
-        };
-
-        layer_2 {
-            bindings = <
-&kp F12        &kp F1      &kp F2      &kp F3         &kp F4         &kp F5          &kp F6             &kp F7         &kp F8    &kp F9     &kp F10  &kp F11
-&kp LS(GRAVE)  &kp LS(N1)  &kp LS(N2)  &kp LS(N3)     &kp LS(N4)     &kp LS(LBKT)    &kp LS(RBKT)       &none          &none     &none      &none    &none
-&kp LSHFT      &kp LS(N5)  &kp LS(N6)  &kp LS(N7)     &kp LS(N8)     &none           &kp LS(BACKSLASH)  &none          &kp UP    &none      &none    &none
-&kp LCTRL      &kp LS(N9)  &kp LS(N0)  &kp LS(MINUS)  &kp LS(EQUAL)  &none           &none              &kp LEFT       &kp DOWN  &kp RIGHT  &none    &none
-                                       &kp LEFT_WIN   &kp SPACE      &kp ENTER       &trans             &kp RIGHT_ALT
-                                                      &none          &none           &none
             >;
         };
 
@@ -60,15 +59,5 @@
             >;
         };
 
-        layer_4 {
-            bindings = <
-&none        &none         &none         &none         &none      &none         &none       &none      &none         &none         &none         &none
-&none        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none      &bt BT_CLR    &bt BT_CLR  &none      &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &none
-&none        &none         &none         &mkp MCLK     &none      &none         &none       &none      &mkp MCLK     &none         &none         &none
-&bootloader  &none         &mkp RCLK     &trans        &mkp LCLK  &none         &none       &mkp LCLK  &trans        &mkp RCLK     &none         &bootloader
-                                         &none         &mkp LCLK  &mkp RCLK     &mkp RCLK   &mkp LCLK
-                                                       &none      &none         &none
-            >;
-        };
     };
 };

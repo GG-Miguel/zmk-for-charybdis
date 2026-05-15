@@ -1,7 +1,8 @@
-## zmk-config for charybdis 
-This library provides firmware specifically for the wireless hot-swap Charybdis customized by MiaoMiao, while also ensuring full compatibility with the official soldered version.
+## ZMK config for Charybdis
 
-Keys are remapped in the browser using the [Keymap Editor](https://nickcoutsos.github.io/keymap-editor/).
+This repository provides firmware for the wireless hot-swap Charybdis customized by MiaoMiao, while keeping compatibility with the official soldered version.
+
+Keys can be remapped in the browser with the [Keymap Editor](https://nickcoutsos.github.io/keymap-editor/).
 
 ## Troubleshooting: "flashes fine but keyboard does not work"
 

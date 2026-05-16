@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: charybdis}
 layers:
-  Base:
+  QWERTY:
   - '`'
   - '1'
   - '2'
@@ -25,17 +25,17 @@ layers:
   - O
   - P
   - BSPC
-  - Shift
-  - A
-  - S
-  - D
-  - F
+  - CAPSLOCK
+  - {t: A, h: Ctrl}
+  - {t: S, h: Alt}
+  - {t: D, h: Cmd}
+  - {t: F, h: LSHFT}
   - G
   - H
-  - J
-  - K
-  - L
-  - ;
+  - {t: J, h: RSHFT}
+  - {t: K, h: Cmd}
+  - {t: L, h: Alt}
+  - {t: ;, h: Ctrl}
   - ''''
   - Ctrl
   - {t: Z, h: Mouse}

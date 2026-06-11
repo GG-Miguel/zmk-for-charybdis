@@ -58,7 +58,7 @@ layers:
   - LEFT WIN
   - DEL
   Lower:
-  - '~'
+  - AltGr+1
   - '!'
   - '@'
   - '#'
@@ -69,19 +69,19 @@ layers:
   - '*'
   - (
   - )
-  - '|'
-  - '`'
-  - '1'
-  - '2'
-  - '3'
-  - '4'
-  - '5'
-  - '6'
-  - '7'
-  - '8'
-  - '9'
-  - '0'
-  - \
+  - AltGr+4
+  - VOL DN
+  - VOL UP
+  - MUTE
+  - PREV
+  - NEXT
+  - PP
+  - STOP
+  - BRI DN
+  - BRI UP
+  - PRINTSCREEN
+  - INSERT
+  - Home
   - '['
   - ']'
   - '{'
@@ -98,8 +98,8 @@ layers:
   - ''''
   - ','
   - .
-  - /
-  - '?'
+  - Sft+[
+  - Sft+]
   - ←
   - ↓
   - ↑
@@ -127,35 +127,35 @@ layers:
   - F9
   - F10
   - F11
-  - Sft+`
-  - Sft+1
-  - Sft+2
-  - Sft+3
-  - Sft+4
-  - Sft+[
-  - Sft+]
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - CAPSLOCK
+  - VOL DN
+  - VOL UP
+  - MUTE
+  - PREV
+  - NEXT
+  - PP
+  - STOP
+  - BRI DN
+  - BRI UP
+  - PRINTSCREEN
+  - INSERT
   - LSHFT
-  - Sft+5
-  - Sft+6
-  - Sft+7
-  - Sft+8
-  - ''
-  - Sft+\
+  - Home
+  - End
+  - PgUp
+  - PgDn
+  - DEL
   - ''
   - ↑
   - ''
   - ''
   - ''
+  - ''
   - Ctrl
-  - Sft+9
-  - Sft+0
-  - Sft+-
-  - Sft+=
+  - ''
+  - ''
+  - ''
+  - ''
   - ''
   - ''
   - ←
